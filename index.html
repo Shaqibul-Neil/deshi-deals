@@ -22,13 +22,13 @@
     <!-- tailwind cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body>
+  <body class="font-['Work Sans',sans-serif]">
     <!-- header start -->
-    <header class="my-4 py-3 shadow">
+    <header class="my-4 pt-3 pb-4 shadow">
       <nav class="flex justify-center items-center gap-2">
         <div><img src="assets/logo.png" alt="" class="w-14" /></div>
         <div>
-          <h2 class="text-[#E71580] text-5xl font-['Work_Sans',sans-serif]">
+          <h2 class="text-[#E71580] text-5xl">
             Deshi.<span class="font-bold">Deals</span>
           </h2>
           <p class="text-xl text-gray-500">Cheap Price Best Quality</p>
@@ -36,8 +36,41 @@
       </nav>
     </header>
     <!-- header end -->
-    <!-- banner start -->
-    <!-- banner end -->
+
+    <main>
+      <!-- banner start -->
+      <section
+        class="bg-[linear-gradient(180deg,rgba(255,255,255,1),rgba(245,221,233,1)_100%)]"
+      >
+        <div
+          class="max-w-[1140px] mx-auto text-center flex flex-col justify-center items-center relative top-30"
+        >
+          <div>
+            <h1 class="text-6xl leading-[72px] font-bold">
+              Purchase TK 200 or above & get <br />
+              <span class="text-[#E71580]">20% off</span>
+            </h1>
+            <div class="flex justify-center items-center gap-12 mt-12">
+              <h3 class="text-2xl font-bold">Use Promo Code</h3>
+              <button
+                class="btn btn-secondary w-[271px] h-[70px] text-2xl font-bold"
+              >
+                SELL200
+              </button>
+            </div>
+          </div>
+          <div>
+            <img src="assets/hero-bg.png" alt="" class="w-full" />
+          </div>
+        </div>
+      </section>
+      <!-- banner end -->
+
+      <!-- feature start -->
+      <section class="mt-52 max-w-[1140px] mx-auto"></section>
+      <!-- feature end -->
+    </main>
+
     <script src="js/script.js"></script>
   </body>
 </html>
