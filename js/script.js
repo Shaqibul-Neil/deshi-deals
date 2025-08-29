@@ -114,7 +114,7 @@ cartContainer.addEventListener('click', function (e) {
       btnApply.innerText = 'Apply';
     }
     if (btnApply.disabled) {
-      // Maintain
+      // Maintain discount
     }
   } else return;
 });
