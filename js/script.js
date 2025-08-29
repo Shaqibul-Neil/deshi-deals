@@ -11,11 +11,6 @@ const totalAfterDiscount = document.querySelector('.total-after-discount');
 
 // console.log(btnsCart, inputCoupon, btnApply, card);
 
-//promo code btn functionality. clicking on promo code btn will add code in the form
-btnPromo.addEventListener('click', function () {
-  inputCoupon.value = this.innerText;
-});
-
 //apply btn functionality
 btnApply.addEventListener('click', function (e) {
   const inputValue = inputCoupon.value;
