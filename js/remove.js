@@ -22,7 +22,7 @@ cartContainer.addEventListener('click', function (e) {
     if (btnApply.disabled) {
       if (updatedPrice < 200) {
         totalDiscount.innerText = 0;
-        totalAfterDiscount.innerText = updatedPrice.toFixed(2);
+        totalAfterDiscount.innerText = updatedPrice;
         btnApply.disabled = false;
         btnApply.innerText = 'Apply';
       } else {

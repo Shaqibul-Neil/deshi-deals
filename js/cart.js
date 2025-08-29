@@ -10,6 +10,7 @@ document.addEventListener('click', function (e) {
   //calculating price
   const existingTotalCartPrice = +totalPrice.textContent;
   totalPrice.textContent = (existingTotalCartPrice + priceCart).toFixed(2);
+  totalAfterDiscount.textContent = totalPrice.textContent;
 
   //product data fetching
   const currentCard = btnCart.closest('.card');
