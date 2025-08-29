@@ -113,6 +113,9 @@ cartContainer.addEventListener('click', function (e) {
       btnApply.disabled = false;
       btnApply.innerText = 'Apply';
     }
+    if (btnApply.disabled) {
+      // Maintain discount if total still >= 200
+    }
   } else return;
 });
 
