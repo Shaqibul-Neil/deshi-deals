@@ -107,14 +107,23 @@ cartContainer.addEventListener('click', function (e) {
     currentCard.remove();
 
     // Check if discount should be reset
-    if (updatedPrice < 200 && btnApply.disabled) {
-      totalDiscount.innerText = 0;
-      totalAfterDiscount.innerText = updatedPrice.toFixed(2);
-      btnApply.disabled = false;
-      btnApply.innerText = 'Apply';
-    }
     if (btnApply.disabled) {
-      // Maintain discount if total still >= 200
+      if (updatedPrice < 200) {
+        totalDiscount.innerText = 0;
+        totalAfterDiscount.innerText = updatedPrice.toFixed(2);
+        btnApply.disabled = false;
+        btnApply.innerText = 'Apply';
+      } else {
+        // Maintain discount if total still >= 200
+        const newDiscount = +(updatedPrice * 0.2).toFixed(2);
+        totalDiscount.innerText = newDiscount;
+        totalAfterDiscount.innerText = (updatedPrice - newDiscount).toFixed(2);
+        btnApply.disabled = true;
+        btnApply.innerText = 'Applied';
+      }
+    } else {
+      //discount is not applied yet
+      totalAfterDiscount.innerText = updatedPrice.toFixed(2);
     }
   } else return;
 });
