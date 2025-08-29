@@ -114,6 +114,7 @@ cartContainer.addEventListener('click', function (e) {
       btnApply.innerText = 'Apply';
     }
     if (btnApply.disabled) {
+      // Maintain
     }
   } else return;
 });
