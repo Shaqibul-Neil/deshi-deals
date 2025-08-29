@@ -26,6 +26,32 @@
     />
     <!-- tailwind cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      .remove-item i {
+        display: inline-block;
+        transition: transform 0.15s ease;
+      }
+      .remove-item:hover i {
+        animation: shake 0.4s ease-in-out;
+      }
+      @keyframes shake {
+        0% {
+          transform: rotate(0deg);
+        }
+        25% {
+          transform: rotate(-15deg);
+        }
+        50% {
+          transform: rotate(15deg);
+        }
+        75% {
+          transform: rotate(-10deg);
+        }
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+    </style>
   </head>
   <body class="font-['Work Sans',sans-serif]">
     <!-- header start -->
@@ -462,7 +488,8 @@
                   ><span class="text-gray-500">TK</span>
                 </h4>
                 <h4 class="text-2xl font-semibold mb-4">
-                  Total: <span class="total text-gray-500">0</span
+                  Total:
+                  <span class="total-after-discount text-gray-500">0</span
                   ><span class="text-gray-500">TK</span>
                 </h4>
                 <h4 class="text-2xl font-semibold">
@@ -479,20 +506,7 @@
           </aside>
         </div>
       </section>
-
       <!-- products end -->
-
-      <div class="card card-side shadow-sm m-5 px-5 py-5 bg-[#33303025]">
-        <figure>
-          <img src="./assets/kitchen-1.png" alt="Movie" />
-        </figure>
-        <div class="card-body">
-          <h2 class="card-title font-semibold">K. Accessories</h2>
-          <p class="text-xl product-price">
-            <span class="product-price">39.00</span> TK
-          </p>
-        </div>
-      </div>
     </main>
 
     <script src="js/script.js"></script>
